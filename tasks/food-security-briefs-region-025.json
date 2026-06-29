@@ -1,0 +1,35 @@
+{
+  "id": "food-security-briefs-region-025",
+  "title": "Regional-aggregate brief (e.g. continental food supply trends)",
+  "project": "food-security-briefs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "agriculture", "public-data", "open-knowledge"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Most briefs cover global or single-country indicators. A regional-aggregate brief (e.g. continental or sub-regional food supply trends) extends the geographic dimension while remaining within the aggregate-only policy (no individual or household microdata). Regional aggregates in FAOSTAT carry their own flag implications (aggregate status) that must be decoded and disclosed. This task demonstrates the pipeline works at the regional level and broadens beneficiary applicability.",
+  "objective": "Produce and deliver a regional-aggregate derivative dataset and plain-language brief (e.g. continental food supply trends) using FAOSTAT regional aggregates, passing all three review gates.",
+  "acceptanceCriteria": [
+    "Indicator is a regional/continental FAOSTAT aggregate (not country-level microdata); gate-004 PASS artifact committed confirming CC-BY-IGO licence, aggregate-only PII screen, and sensitivity screen.",
+    "Regional aggregation methodology disclosed: FAOSTAT aggregate-status flag decoded and explained; the brief states how the regional aggregate is computed and its limitations.",
+    "Derivative dataset built by the deterministic harness: tidy long-format CSV with M49 region codes, datapackage.json (Frictionless), and Croissant ML metadata; output checksum committed and re-derived in CI.",
+    "Plain-language brief passes the statistical-integrity checklist, passes the non-alarmist editorial review (checklist artifact committed, zero unresolved flags), and includes regional-context caveats, 'not advice' notice, and FAO attribution + non-endorsement disclaimer.",
+    "All three gate sign-offs committed: domain-expert, editorial, and licence/provenance.",
+    "Delivered/used with acceptance-evidence artifact recorded; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-template-014.json — scalable brief template",
+    "tasks/food-security-briefs-harness-006.json — build harness",
+    "tasks/food-security-briefs-statcheck-003.json — flag-handling for aggregate status",
+    "PLAN.md — Scope (aggregate / country-or-region-level statistics only)",
+    "FAOSTAT regional aggregate methodology documentation"
+  ],
+  "output": "A committed regional-aggregate derivative dataset (CSV + datapackage.json + Croissant metadata) and plain-language brief, with all review artifacts and acceptance-evidence artifact recorded.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

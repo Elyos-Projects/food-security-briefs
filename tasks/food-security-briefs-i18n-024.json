@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-i18n-024",
+  "title": "Translate brief set into an additional language",
+  "project": "food-security-briefs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "open-knowledge", "public-data", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Following the first translation (i18n-015), this backlog task covers translating additional delivered briefs into a second target language to further widen the beneficiary reach. The specific language is determined by partner demand and reviewer availability. Each translation requires both a domain expert (for statistical accuracy) and a language reviewer (for non-alarmist fidelity), and all attribution, non-endorsement, and 'not advice' requirements must be preserved in the target language.",
+  "objective": "Translate a set of delivered plain-language briefs into a second agreed target language with domain and language review, preserving the non-alarmist standard and all required notices.",
+  "acceptanceCriteria": [
+    "At least one delivered brief translated into a target language different from the one covered in i18n-015, selected in consultation with the confirmed delivery partner and based on reviewer availability.",
+    "Translation reviewed by a domain expert confirming statistical accuracy and correct representation of all technical terms, indicator definitions, and uncertainty in the target language.",
+    "Translation reviewed by a language reviewer confirming the non-alarmist standard is maintained and no alarmist, politically-charged, or advice-implying framing was introduced in the target language.",
+    "Review artifacts committed (domain-review pass/flag, language-review pass/flag); no unresolved flags at publication.",
+    "FAO attribution, non-endorsement disclaimer, and 'not advice' notice preserved and correctly rendered in the target language.",
+    "Translated output committed alongside the English original, clearly labeled as an adaptation; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-i18n-015.json — first translation as pattern",
+    "tasks/food-security-briefs-template-014.json — brief template",
+    "tasks/food-security-briefs-partner-013.json — delivery partner for language selection",
+    "PLAN.md — Scope (translations and accessibility variants)"
+  ],
+  "output": "Committed translated briefs in the second agreed target language, with domain and language review artifacts and all required notices preserved.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

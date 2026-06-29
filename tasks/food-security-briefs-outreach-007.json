@@ -1,0 +1,33 @@
+{
+  "id": "food-security-briefs-outreach-007",
+  "title": "Partner/beneficiary outreach + indicator shortlist (TOPIC-CATALOG.md)",
+  "project": "food-security-briefs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["food-security", "open-knowledge", "public-data", "agriculture"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "No partner or beneficiary is currently secured. The project's definition of 'shipped' requires a named beneficiary to accept and use the output — producing a brief without a recipient is not a success. Simultaneously, the candidate topic backlog (TOPIC-CATALOG.md) needs to be seeded with FAOSTAT indicators that are structural, low-controversy, and clearly suitable before any per-topic brief tasks are created. Both workstreams unblock the M0 pilot and must run in parallel.",
+  "objective": "Open at least one partner-outreach thread with a candidate beneficiary channel and create the initial TOPIC-CATALOG.md shortlist of pre-screened FAOSTAT indicator candidates.",
+  "acceptanceCriteria": [
+    "At least one partner-outreach thread opened with a candidate beneficiary channel (educator, newsroom, civil-society group, library, or humanitarian analyst), documented with contact record and response status.",
+    "TOPIC-CATALOG.md created with at least 5 candidate FAOSTAT indicator entries, each pre-screened for structural/long-run nature, low controversy, and initial licence/sensitivity suitability (flagged if any concern).",
+    "Each catalog entry records: indicator code, domain, definition summary, reference period type, why it is structural/long-run, and any sensitivity or licence flag.",
+    "The pilot indicator for pilot-008 is identified from the catalog (e.g. food supply kcal/capita/day or cereal production trends) with rationale for its low-controversy selection.",
+    "Document committed to the repo; commit is DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md — Problem & beneficiaries section",
+    "PLAN.md — Roadmap M0 (cold-start de-risking)",
+    "PLAN.md — Scope (candidate topic pool)",
+    "FAOSTAT domains and indicator catalogue"
+  ],
+  "output": "A committed TOPIC-CATALOG.md with an initial indicator shortlist and at least one documented partner-outreach thread.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

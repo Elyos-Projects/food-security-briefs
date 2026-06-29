@@ -1,0 +1,31 @@
+{
+  "id": "food-security-briefs-reviewer-001",
+  "title": "Name/secure domain-expert + editorial reviewers (blocking gate roles)",
+  "project": "food-security-briefs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "agriculture", "open-knowledge", "public-data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "food-security-briefs requires three independent, non-skippable review gates for every brief: a domain/statistical expert, an editorial (non-alarmist) reviewer, and a licence/provenance reviewer. Until at least one named, qualified reviewer is secured for each gate, no brief can proceed to review or publication. These roles are explicitly blocking — the M0 pilot cannot ship without them.",
+  "objective": "Identify and confirm named individuals willing to serve as domain-expert reviewer, editorial reviewer, and licence/provenance reviewer, and document their credentials and contact channels.",
+  "acceptanceCriteria": [
+    "At least one named domain/statistical expert (food security analyst, agricultural economist, or public-health nutrition specialist with relevant credentials) agrees to review briefs and is documented with contact channel.",
+    "At least one named editorial reviewer agrees to apply the non-alarmist style guide checklist and is documented.",
+    "At least one named licence/provenance reviewer agrees to verify CC-BY-IGO attribution and non-endorsement compliance and is documented.",
+    "Reviewer commitments recorded in a committed document (e.g. docs/reviewers.md or equivalent) with name, role, credentials summary, and contact channel.",
+    "All roles filled before the M0 pilot (pilot-008) enters review; until then, all brief tasks remain verifiedNeed: false and no brief ships."
+  ],
+  "resources": [
+    "PLAN.md — Governance, roles & stakeholders section",
+    "PLAN.md — Quality, review & risk gates section"
+  ],
+  "output": "A committed document recording the names, roles, credentials, and contact channels of the secured domain-expert, editorial, and licence/provenance reviewers.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

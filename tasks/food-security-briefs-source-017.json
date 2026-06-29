@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-source-017",
+  "title": "Vet additional open sources (World Bank/OWID) — licence verification",
+  "project": "food-security-briefs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "data-governance", "open-data", "public-data"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "FAOSTAT is the primary source, but some indicators benefit from context data from other sources such as World Bank Open Data or Our World in Data. Any additional source is admitted only after per-source licence verification confirms it is openly licensed for derivatives, with attribution terms recorded. Sources with non-commercial, share-alike-incompatible, non-derivative, or unclear terms — and all famine/acute-crisis classification feeds — are excluded. The gate-004 standard applies to every source.",
+  "objective": "Verify the licence and derivative-use terms for candidate additional sources (World Bank Open Data, Our World in Data) and produce a committed admit/defer/exclude decision record per source.",
+  "acceptanceCriteria": [
+    "World Bank Open Data licence verified for derivatives: licence id, URL, permitsDerivatives: true (or EXCLUDE if not), attributed clause, attribution string, and snapshot reference recorded.",
+    "Our World in Data licence verified for derivatives: same fields recorded; confirm CC-BY-4.0 applies to the specific dataset(s) considered, not just the platform generally.",
+    "Any candidate source with non-commercial, non-derivative, share-alike-incompatible, or unclear terms is explicitly EXCLUDED with the concern documented.",
+    "Any famine/acute-crisis classification feed (IPC, Cadre Harmonisé) encountered is excluded with rationale.",
+    "A committed admit/defer/exclude decision record per source, ready for reference by any task that wants to use that source.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-gate-004.json — gate specification",
+    "PLAN.md — Data, licensing & compliance ('Similar' / additional sources section)",
+    "World Bank Open Data terms and licence",
+    "Our World in Data terms and licence"
+  ],
+  "output": "Committed admit/defer/exclude decision records for each vetted candidate source, with full licence verification details and snapshot references.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

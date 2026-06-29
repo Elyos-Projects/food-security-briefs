@@ -1,0 +1,31 @@
+{
+  "id": "food-security-briefs-dash-022",
+  "title": "Outcome dashboard (deliveries + reuse events, reads the ledger)",
+  "project": "food-security-briefs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "open-knowledge", "data-engineering", "public-data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "As the project accumulates delivered briefs, datasets, and reuse events, the Steward needs a lightweight way to track progress against the success metrics (briefs in use, reuse events, delivery partners). A simple dashboard that reads the outcome ledger and displays delivery counts, reuse events, and partner status makes the metrics visible and auditable without requiring manual report-writing.",
+  "objective": "Implement a lightweight outcome dashboard (CLI or static HTML) that reads the outcome ledger and displays delivery counts, reuse events, and partner status against the project success metrics.",
+  "acceptanceCriteria": [
+    "Reads the outcome ledger (outcomes/*.json or equivalent) and displays: count of briefs/datasets delivered and in use, count of externally verifiable reuse events, confirmed delivery partner count, and any metrics vs. targets from PLAN.md.",
+    "Does not fabricate or estimate counts — only reads committed, verified ledger entries.",
+    "Implemented as a TypeScript/ESM CLI or static-HTML generator consistent with the project tech stack.",
+    "pnpm build && pnpm test && pnpm lint pass; code is MIT-licensed; no credentials or API keys committed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md — Success metrics section",
+    "tasks/food-security-briefs-reuse-018.json — outcome ledger format",
+    "tasks/food-security-briefs-partner-013.json — delivery partner record"
+  ],
+  "output": "A merged PR adding a lightweight outcome dashboard that reads the outcome ledger and displays delivery and reuse metrics.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

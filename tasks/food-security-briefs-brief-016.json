@@ -1,0 +1,35 @@
+{
+  "id": "food-security-briefs-brief-016",
+  "title": "Briefs + datasets #4–#5 across geographies/indicators (representative)",
+  "project": "food-security-briefs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["food-security", "agriculture", "public-data", "open-knowledge"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M2 requires reaching at least five cumulative delivered briefs and datasets. This task covers the fourth and fifth brief/dataset pairs, using the scalable template (template-014) to reduce per-brief effort. Indicators and geographies are selected from the triaged catalog with confirmed delivery partner input (partner-013). Each brief/dataset pair must still pass all three review gates. Specific indicators are not yet enumerated in the plan and will be selected from TOPIC-CATALOG.md after further triage.",
+  "objective": "Produce and deliver briefs and datasets #4 and #5 for FAOSTAT indicators selected from the triaged catalog, using the scalable template (template-014) and passing all three review gates.",
+  "acceptanceCriteria": [
+    "Two distinct FAOSTAT indicators selected from the triaged catalog, each with a committed gate-004 PASS artifact; selection made in consultation with the confirmed delivery partner.",
+    "Each derivative dataset built by the deterministic harness: tidy long-format CSV, datapackage.json (Frictionless), and Croissant ML metadata; status flags decoded; uncertainty preserved; source totals reconciled; output checksum committed and re-derived in CI.",
+    "Each brief uses the scalable template (template-014), passes the statistical-integrity checklist, passes the non-alarmist editorial review (checklist artifact committed, zero unresolved flags), and includes all required sections and notices.",
+    "All three gate sign-offs committed for each brief/dataset pair: domain-expert, editorial, and licence/provenance.",
+    "Both delivered/used by the confirmed delivery partner with acceptance-evidence artifacts recorded; verifiedNeed flips to true once confirmed.",
+    "pnpm build && pnpm test && pnpm lint pass; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-template-014.json — scalable brief template",
+    "tasks/food-security-briefs-partner-013.json — confirmed delivery partner",
+    "tasks/food-security-briefs-triage-010.json — triaged indicators",
+    "tasks/food-security-briefs-harness-006.json — build harness",
+    "tasks/food-security-briefs-styleguide-002.json — editorial standard"
+  ],
+  "output": "Two committed derivative datasets (CSV + datapackage.json + Croissant metadata) and two plain-language briefs (#4 and #5), each with all review artifacts and acceptance-evidence artifacts recorded.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "food-security-briefs-pilot-008",
+  "title": "Pilot brief + derivative dataset, end-to-end (low-controversy indicator)",
+  "project": "food-security-briefs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "agriculture", "public-data", "open-knowledge"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M0 milestone must prove the full end-to-end pipeline on one low-controversy, structural indicator (e.g. global/regional food supply in kcal/capita/day or cereal production trends). This pilot exercises every gate — licence, statistical integrity, non-alarmist editorial, and reproducibility — and delivers a real output to a beneficiary via an informal channel or Zenodo/open-repo self-serve fallback. It is the proof-of-concept that every subsequent brief/dataset task builds on.",
+  "objective": "Produce and deliver one pilot derivative dataset and plain-language brief for a low-controversy FAOSTAT indicator, passing all three review gates and delivering the output to a named beneficiary or self-serve channel with acceptance evidence recorded.",
+  "acceptanceCriteria": [
+    "Pilot indicator is structural, long-run, and low-controversy (e.g. food supply kcal/capita/day or cereal production trends), selected from the TOPIC-CATALOG.md shortlist with a realistic delivery path.",
+    "gate-004 PASS artifact committed: CC-BY-IGO confirmed, permitsDerivatives: true with cited clause/URL, attribution string + non-endorsement disclaimer recorded, PII screen passes (aggregate-only), sensitivity screen passes (no acute-crisis framing).",
+    "Derivative dataset built by the deterministic harness: tidy long-format CSV, datapackage.json (Frictionless), and Croissant ML JSON-LD metadata; status flags decoded; published uncertainty preserved; source totals reconciled within documented tolerance; output checksum committed and re-derived in CI.",
+    "Plain-language brief passes the statistical-integrity checklist (every figure resolves to a committed dataset row), passes the non-alarmist editorial review (style-guide checklist artifact committed, zero unresolved flags), includes indicator definition, reference period, status-flag disclosure, uncertainty shown, 'what the data does not say' section, 'not advice' notice, FAO attribution + non-endorsement disclaimer, and meets the readability target.",
+    "All three gate sign-offs committed: domain-expert (statistical correctness), editorial (non-alarmist standard), and licence/provenance (attribution + reproducibility).",
+    "Output delivered to and accepted/used by a named beneficiary (informal channel) or submitted to Zenodo/open repo (self-serve fallback) with the Steward's acceptance-evidence artifact (outcomes/<topic-id>.json) recorded — or submitted with the specific blocker surfaced.",
+    "pnpm build && pnpm test && pnpm lint pass; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-styleguide-002.json — non-alarmist editorial standard",
+    "tasks/food-security-briefs-statcheck-003.json — statistical-integrity checklist",
+    "tasks/food-security-briefs-gate-004.json — licence/provenance gate",
+    "tasks/food-security-briefs-dataspec-005.json — derivative-dataset spec",
+    "tasks/food-security-briefs-harness-006.json — build harness",
+    "tasks/food-security-briefs-outreach-007.json — partner outreach and indicator shortlist",
+    "FAOSTAT bulk download / API",
+    "Zenodo (self-serve dataset DOI / fallback delivery)"
+  ],
+  "output": "A committed derivative dataset (CSV + datapackage.json + Croissant metadata) and plain-language brief for the pilot indicator, with all review artifacts and acceptance-evidence artifact recorded in outcomes/<topic-id>.json.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

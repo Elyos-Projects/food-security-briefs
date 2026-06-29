@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-i18n-015",
+  "title": "Translate a delivered brief (domain + language reviewer)",
+  "project": "food-security-briefs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "open-knowledge", "public-data", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "To widen the reach of delivered briefs beyond English-speaking audiences, at least one brief must be translated into another language in M2. Because food security is a sensitive topic where mistranslation or loss of nuance can undermine the non-alarmist standard and the 'not advice' framing, the translation requires review by both a domain expert (for statistical accuracy) and a language reviewer (for non-alarmist fidelity in the target language). The specific target language is to be determined in consultation with the confirmed delivery partner.",
+  "objective": "Translate one delivered plain-language brief into a target language agreed with the delivery partner, with both domain and language review confirming accuracy and non-alarmist fidelity.",
+  "acceptanceCriteria": [
+    "A delivered brief (from brief-011, brief-012, or pilot-008) is selected for translation in consultation with the confirmed delivery partner (partner-013).",
+    "Translation reviewed by a domain expert confirming statistical accuracy and correct representation of indicator definitions, reference periods, and uncertainty in the target language.",
+    "Translation reviewed by a language reviewer confirming the non-alarmist standard is maintained, no alarmist or politically-charged framing was introduced, and the 'not advice' notice and FAO attribution + non-endorsement disclaimer are correctly rendered.",
+    "Review artifacts committed (domain-review pass/flag, language-review pass/flag); no unresolved flags at publication.",
+    "Translated output committed alongside the English original, clearly labeled as an adaptation with the FAO non-endorsement disclaimer preserved in the target language.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-template-014.json — brief template and style guide integration",
+    "tasks/food-security-briefs-brief-011.json — source brief candidate",
+    "tasks/food-security-briefs-partner-013.json — delivery partner for target language selection",
+    "PLAN.md — Scope (translations and accessibility variants)"
+  ],
+  "output": "A committed translated brief in the agreed target language, with domain and language review artifacts and the FAO non-endorsement disclaimer preserved.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

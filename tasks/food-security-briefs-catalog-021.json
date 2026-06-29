@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-catalog-021",
+  "title": "Build TOPIC-CATALOG.md (indicator backlog, licence/sensitivity pre-triaged)",
+  "project": "food-security-briefs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "agriculture", "public-data", "open-knowledge"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The candidate topic pool for brief/dataset tasks needs a structured, maintained catalog of FAOSTAT indicators pre-screened for licence suitability, statistical suitability, and sensitivity. The initial shortlist from outreach-007 provides the seed; this task expands it into a comprehensive, structured TOPIC-CATALOG.md that feeds the triage pipeline. Each entry is a triage candidate only — it becomes a task only after passing the full gate-004.",
+  "objective": "Create a comprehensive TOPIC-CATALOG.md covering candidate FAOSTAT indicators, with initial licence/sensitivity pre-screening and status (triage-pending, triaged-PASS, triaged-EXCLUDE) for each entry.",
+  "acceptanceCriteria": [
+    "TOPIC-CATALOG.md contains at least 15 candidate FAOSTAT indicator entries spanning multiple FAOSTAT domains (e.g. Food Balance Sheets, Suite of Food Security Indicators, Production, Trade, Prices).",
+    "Each entry records: FAOSTAT domain, indicator code and name, indicator definition summary, reference period type, geography level, initial licence/sensitivity pre-screening notes, and status (triage-pending / triaged-PASS / triaged-EXCLUDE).",
+    "Entries explicitly flag any indicator near acute-crisis territory, advice-adjacent, or with potential third-party-data licence entanglement, marking them as triaged-EXCLUDE or escalate.",
+    "Catalog is structured so it can be updated incrementally as triage progresses; each row links to its gate artifact once triaged.",
+    "Catalog deliberately biases toward structural, long-run, low-controversy indicators (per PLAN.md scope).",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-outreach-007.json — initial indicator shortlist",
+    "tasks/food-security-briefs-gate-004.json — gate criteria for pre-screening",
+    "PLAN.md — Scope (candidate topic pool)",
+    "FAOSTAT domains and indicator catalogue"
+  ],
+  "output": "A committed TOPIC-CATALOG.md with at least 15 pre-screened FAOSTAT indicator entries, ready to feed the triage pipeline.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

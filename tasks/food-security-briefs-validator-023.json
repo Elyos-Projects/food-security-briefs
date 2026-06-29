@@ -1,0 +1,32 @@
+{
+  "id": "food-security-briefs-validator-023",
+  "title": "Standalone Croissant + Frictionless validator CLI",
+  "project": "food-security-briefs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "data-engineering", "open-data", "public-data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Downstream reusers of the project's derivative datasets need to be able to independently validate that a dataset conforms to the Frictionless Tabular Data Package spec and the Croissant ML metadata spec, without having to set up the full build harness. A standalone validator CLI enables any reuser to run a quick conformance check against the pinned spec versions used in this project.",
+  "objective": "Implement a standalone TypeScript/ESM CLI that validates a derivative dataset's datapackage.json (Frictionless) and Croissant metadata against the pinned spec versions used by this project.",
+  "acceptanceCriteria": [
+    "CLI accepts a path to a dataset directory and validates: datapackage.json against Frictionless Tabular Data Package v1 spec, and Croissant JSON-LD against Croissant ML v1.0 spec.",
+    "Reports PASS or FAIL with specific violations; exit code 0 on PASS, 1 on FAIL.",
+    "Tests include: known-valid dataset (golden fixture from harness-006), deliberately malformed Frictionless descriptor, deliberately malformed Croissant metadata.",
+    "pnpm build && pnpm test && pnpm lint pass; code is MIT-licensed; no credentials committed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-dataspec-005.json — pinned spec versions",
+    "tasks/food-security-briefs-harness-006.json — golden fixtures",
+    "Frictionless Data — Tabular Data Package specification",
+    "Croissant ML metadata format specification (MLCommons)"
+  ],
+  "output": "A merged PR adding a standalone Croissant + Frictionless validator CLI with CI-green tests against golden fixtures and known-bad inputs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

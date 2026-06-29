@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-template-014",
+  "title": "Scalable brief template + accessible charts (alt-text)",
+  "project": "food-security-briefs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["food-security", "open-knowledge", "public-data", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "After M0–M1 establish the pipeline with hand-crafted briefs, M2 requires a reusable template that encodes the style guide and statistical-integrity requirements as fill-in sections, so authoring a new brief does not require rediscovering all the rules. The template must also standardize accessible chart generation (deterministic, committed alt-text, accessible color/contrast) to reduce per-brief effort and ensure consistency.",
+  "objective": "Create a scalable brief template that encodes the non-alarmist style guide and statistical-integrity requirements as fill-in sections, with a specification for deterministic, accessible chart generation.",
+  "acceptanceCriteria": [
+    "Template encodes all required sections as labeled placeholders: indicator definition, reference period and status-flag disclosure, published uncertainty, 'what the data does not say', main findings (sourced to dataset rows), 'not advice' notice, FAO attribution + non-endorsement disclaimer, and data provenance.",
+    "Non-alarmist style-guide and statistical-integrity requirements are embedded in the template as author-guidance notes so violations are surfaced during drafting, not only at review.",
+    "Specifies deterministic chart generation: charts are produced from committed data (not hand-drawn), use accessible color/contrast, and ship with committed alt-text.",
+    "Template includes a readability self-check prompting the author to measure and record the readability score against the target.",
+    "Evidence of reduced per-brief effort: the template is applied to at least one brief (brief-016 or an update to a prior brief) and the effort comparison is recorded in the outcome ledger.",
+    "Output licensed CC-BY-4.0; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-styleguide-002.json — non-alarmist editorial standard",
+    "tasks/food-security-briefs-statcheck-003.json — statistical-integrity checklist",
+    "tasks/food-security-briefs-pilot-008.json — M0 pilot as baseline",
+    "PLAN.md — Solution approach (step 5: Author the brief)"
+  ],
+  "output": "A committed scalable brief template (Markdown or structured format) with accessible chart specification, ready for use by all subsequent brief-authoring tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
