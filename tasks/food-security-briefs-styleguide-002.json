@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-styleguide-002",
+  "title": "Non-alarmist editorial style guide + \"not advice\" framing",
+  "project": "food-security-briefs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "agriculture", "public-data", "open-knowledge"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "food-security-briefs turns FAOSTAT (CC BY 4.0 IGO) and other openly-licensed food/agriculture statistics into derivative datasets and plain-language briefs. Food security is a sensitive civic topic where public coverage is frequently alarmist, decontextualized, or politically charged. Before any brief is written, the project needs a committed editorial standard that makes non-alarmism and 'this is information, not advice' enforceable rather than a matter of reviewer taste.",
+  "objective": "Create the non-alarmist editorial style guide and 'not advice' framing that every brief must pass, including the reviewer checklist that produces a committed pass/flag artifact per brief.",
+  "acceptanceCriteria": [
+    "Bans sensational/emotive framing, causal/political attribution, prediction beyond the source, country-shaming or provocative rankings, and any dietary/medical/agricultural/financial/policy advice.",
+    "Requires every brief to state the indicator definition, reference period, status flags, and published uncertainty, plus an explicit 'what the data does not say' section.",
+    "Specifies the FAO attribution + non-endorsement disclaimer placement and the exact 'not advice' notice wording.",
+    "Sets a published readability target (grade level / metric) and defines a reviewer checklist that yields a committed pass/flag artifact per brief; one unresolved flag blocks publication.",
+    "Distinguishes chronic/structural indicators from acute-crisis concepts (out of scope) so they are never conflated.",
+    "pnpm build && pnpm test && pnpm lint pass for any committed tooling; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\food-security-briefs\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "FAOSTAT terms of use (CC BY 4.0 IGO)",
+    "Creative Commons Attribution 4.0 International IGO"
+  ],
+  "output": "A committed non-alarmist editorial style guide + 'not advice' framing document and reviewer checklist, ready for use by every per-topic brief task.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
