@@ -1,0 +1,35 @@
+{
+  "id": "food-security-briefs-harness-006",
+  "title": "Deterministic build harness (extract→tidy→reconcile→checksum)",
+  "project": "food-security-briefs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "data-engineering", "open-data", "public-data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Trust in this project's derivative datasets rests on deterministic, reproducible builds: any third party must be able to re-derive every dataset from the licensed FAOSTAT source and confirm it matches the committed output. The build harness implements the extract-tidy-reconcile-checksum pipeline per the dataset spec (dataspec-005), runs in CI, and ships golden fixtures so 'CI green' means reproducibility is verified, not just linting.",
+  "objective": "Implement the deterministic build harness (TypeScript, ESM, pnpm) that extracts from FAOSTAT, tidy-transforms, decodes status flags, reconciles against source totals, and emits Frictionless + Croissant metadata with a committed output checksum.",
+  "acceptanceCriteria": [
+    "Implements the extract→tidy→reconcile→validate→checksum pipeline as a TypeScript/ESM Node package per the canonical model in dataspec-005.",
+    "Decodes FAOSTAT status flags (official/estimated/imputed/aggregate), normalizes units, attaches ISO3 and M49 codes, preserves reference periods and published uncertainty (e.g. PoU lower/upper bounds) — drops nothing silently.",
+    "Emits a tidy long-format CSV, a Frictionless Tabular Data Package (datapackage.json), and Croissant ML JSON-LD metadata.",
+    "Reconciles against FAOSTAT source totals/aggregates within a documented tolerance; emits a QA report.",
+    "Ships committed golden-fixture tests: a known extract with expected output checksum and source-total reconciliation; CI re-derives and asserts equality (proves reproducibility).",
+    "Unit tests assert status flags and published uncertainty survive the transform intact.",
+    "pnpm build && pnpm test && pnpm lint pass; code is MIT-licensed; no credentials or API keys committed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md — Solution approach (pipeline steps 2–4)",
+    "PLAN.md — Locked decisions (deterministic, checksum-verified reproducibility)",
+    "tasks/food-security-briefs-dataspec-005.json — canonical metadata model",
+    "FAOSTAT bulk download / API documentation"
+  ],
+  "output": "A merged PR adding the deterministic build harness package with CI-green golden-fixture tests and checksum reconciliation.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

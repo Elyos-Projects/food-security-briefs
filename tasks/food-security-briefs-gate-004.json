@@ -1,0 +1,35 @@
+{
+  "id": "food-security-briefs-gate-004",
+  "title": "Licence/provenance/PII + sensitivity gate (CC-BY-IGO)",
+  "project": "food-security-briefs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "public-data", "open-knowledge", "data-governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every derivative dataset and brief must be built from a source confirmed openly licensed for derivatives under CC BY 4.0 IGO, with FAO attribution and non-endorsement disclaimer recorded. FAOSTAT is not uniformly CC-BY-IGO across all domains — some incorporate third-party data with their own terms. Additionally, the gate must screen for PII (aggregate-only policy) and exclude acute-crisis/famine framing and advice-adjacent topics. A formal, reusable gate specification is needed so every topic passes the same non-skippable check before any work begins.",
+  "objective": "Design and document the licence/provenance/PII and sensitivity gate that must be applied to every indicator before a derivative dataset or brief is created.",
+  "acceptanceCriteria": [
+    "Verifies that the indicator's source licence is CC BY 4.0 IGO (or equivalent open derivative-permitting licence), records permitsDerivatives: true with a cited clause and URL, and records the attribution string and non-endorsement disclaimer.",
+    "Per-indicator third-party-data check: excludes or escalates any FAOSTAT domain whose underlying data is not uniformly CC-BY-IGO, with explicit FLAG/EXCLUDE and surfaced concern.",
+    "PII screen: confirms pii.level is aggregate; hard-excludes microdata, household-survey, or re-identifiable data.",
+    "Sensitivity screen: excludes acute-crisis/famine framing (IPC, Cadre Harmonisé) and any advice-adjacent topic; flags anything requiring escalation to credentialed expert sign-off.",
+    "Records licence id, URL, and snapshot reference (committed copy + SHA-256 + Wayback Machine save URL) per indicator.",
+    "Produces a committed PASS/FLAG/EXCLUDE artifact per topic with full rationale; any unresolved FLAG or EXCLUDE blocks the topic from proceeding.",
+    "Output licensed CC-BY-4.0; commit is DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md — Data, licensing & compliance section",
+    "PLAN.md — Goals and non-goals (non-goals section)",
+    "Creative Commons Attribution 4.0 International IGO (CC BY 4.0 IGO)",
+    "FAOSTAT terms of use"
+  ],
+  "output": "A committed gate specification document and per-indicator gate-artifact template (PASS/FLAG/EXCLUDE), ready for use by every brief and dataset task.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

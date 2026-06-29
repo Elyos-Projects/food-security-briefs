@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-snapshot-009",
+  "title": "Licence/terms snapshot capture in provenance flow",
+  "project": "food-security-briefs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["food-security", "data-governance", "open-data", "public-data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The provenance model requires that every dataset records a snapshot of the source's licence/terms page: a committed copy, a SHA-256 hash, and a Wayback Machine save URL. This snapshot proves the licence was verified at the time of dataset creation and defends against licence terms being changed retrospectively. This tooling needs to be integrated into the build harness flow so snapshots are captured systematically.",
+  "objective": "Implement the licence/terms snapshot capture step in the provenance flow: committed copy of the source licence page, SHA-256 hash, and Wayback Machine save URL recorded in license.snapshotRef.",
+  "acceptanceCriteria": [
+    "Implements the snapshot format: committed copy of the FAOSTAT terms/licence page stored at a canonical path, SHA-256 hash of the committed copy computed and recorded, and Wayback Machine save URL recorded.",
+    "license.snapshotRef in the canonical model records the committed file path, SHA-256, and Wayback save URL with a retrieval timestamp.",
+    "Integrates with or extends the build harness (harness-006) so snapshot capture is part of the dataset-build provenance flow.",
+    "CI verifies the snapshot file exists and its SHA-256 matches the recorded hash.",
+    "pnpm build && pnpm test && pnpm lint pass; code is MIT-licensed; no credentials or API keys committed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md — Data, licensing & compliance (provenance model section)",
+    "PLAN.md — Open questions (licence-snapshot format)",
+    "tasks/food-security-briefs-gate-004.json — gate specification",
+    "tasks/food-security-briefs-harness-006.json — build harness",
+    "Wayback Machine Save API documentation"
+  ],
+  "output": "A merged PR adding licence/terms snapshot capture to the provenance flow, with CI verification of the committed snapshot hash.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

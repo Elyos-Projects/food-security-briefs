@@ -1,0 +1,35 @@
+{
+  "id": "food-security-briefs-dataspec-005",
+  "title": "Derivative-dataset spec (Frictionless + Croissant + canonical model)",
+  "project": "food-security-briefs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "public-data", "open-data", "data-engineering"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every derivative dataset produced by this project must follow a consistent, interoperable format: a tidy long-format CSV plus a Frictionless Tabular Data Package (datapackage.json) and Croissant ML JSON-LD metadata, with decoded status flags, explicit units, ISO3/M49 geography codes, reference periods, preserved uncertainty, and full provenance. A canonical metadata model serves as the single source of truth from which all outputs are projected.",
+  "objective": "Document the canonical metadata model, Frictionless Data Package structure, and Croissant ML metadata schema that every derivative dataset must conform to.",
+  "acceptanceCriteria": [
+    "Defines the canonical metadata model fields: id, title, source, domain, indicatorCode, indicatorDefinition, geographyLevel, referencePeriod, datasetVersion, releaseDate, license, provenance, flagsDecoded, units, uncertainty, pii, methodologyNotes, caveats, readabilityScore, notAdvice, and review.",
+    "Specifies the Frictionless Tabular Data Package v1 structure (datapackage.json with descriptor, resources, and field schema) and the Croissant ML v1.0 JSON-LD metadata structure.",
+    "Defines required tidy CSV columns: decoded status flags, units, ISO 3166-1 alpha-3 country codes, UN M49 geography codes, reference periods, and published uncertainty fields.",
+    "Specifies provenance fields: sourceUrl, apiEndpoint, publisher, retrievedAt, datasetVersion, releaseDate, sourceChecksum, buildScriptRef, outputChecksum, and licenseSnapshotRef.",
+    "Pins the spec versions (Frictionless v1, Croissant ML v1.0, ISO 3166-1 alpha-3, UN M49, SPDX identifiers) and documents the version-bump process.",
+    "Output licensed CC-BY-4.0; commit is DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md — Solution approach (canonical metadata model section)",
+    "PLAN.md — Locked decisions",
+    "Frictionless Data — Tabular Data Package / Data Package specification",
+    "Croissant ML metadata format specification (MLCommons)",
+    "ISO 3166-1 alpha-3; UN M49 standard area codes; SPDX license list"
+  ],
+  "output": "A committed derivative-dataset specification document (canonical metadata model + Frictionless + Croissant schema) that all dataset tasks reference.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

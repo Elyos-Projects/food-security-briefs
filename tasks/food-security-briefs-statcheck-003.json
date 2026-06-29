@@ -1,0 +1,35 @@
+{
+  "id": "food-security-briefs-statcheck-003",
+  "title": "Statistical-integrity checklist (definitions, flags, periods, uncertainty)",
+  "project": "food-security-briefs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "agriculture", "statistics", "public-data"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "FAOSTAT indicators carry technical definitions, multi-year moving averages (e.g. 3-year PoU averages with lower/upper uncertainty bounds), and status flags (official/estimated/imputed/aggregate) that are easy to misread or strip out. A committed, reviewable statistical-integrity checklist is needed so that every figure in every brief can be verified to resolve to a derivative-dataset row, flags are preserved, uncertainty is shown, and chronic/structural indicators are never conflated with acute-crisis concepts.",
+  "objective": "Create the statistical-integrity checklist that every brief must pass, covering FAOSTAT flag handling, reference periods, uncertainty preservation, and the chronic-vs-acute distinction.",
+  "acceptanceCriteria": [
+    "Enumerates how to handle each FAOSTAT status flag (official, estimated, imputed, aggregate) so estimated or imputed values are never presented as observed in a brief.",
+    "Specifies how to handle 3-year moving averages (e.g. PoU), provisional vs. final figures, and imputed values, including required disclosure wording.",
+    "Requires every figure in a brief to resolve to a specific row in the committed derivative dataset; un-sourced numbers fail the checklist.",
+    "Requires published uncertainty (e.g. PoU lower/upper bounds) to be carried into the brief and never collapsed to a point estimate without disclosure.",
+    "Distinguishes chronic/structural food-security indicators (in scope) from acute-crisis/famine concepts (out of scope, escalate/exclude), so the two are never conflated.",
+    "Produces a committed, per-brief pass/flag checklist artifact that a domain-expert reviewer can sign off; one unresolved flag blocks publication.",
+    "Output licensed CC-BY-4.0; commit is DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md — Solution approach (pipeline step 4: Statistical QA)",
+    "PLAN.md — Quality, review & risk gates section",
+    "FAOSTAT methodology and indicator documentation",
+    "FAOSTAT Suite of Food Security Indicators documentation"
+  ],
+  "output": "A committed statistical-integrity checklist document and per-brief checklist template, ready for use by every brief-authoring task.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

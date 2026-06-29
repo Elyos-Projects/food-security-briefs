@@ -1,0 +1,32 @@
+{
+  "id": "food-security-briefs-partner-013",
+  "title": "Secure first confirmed delivery partner",
+  "project": "food-security-briefs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["food-security", "open-knowledge", "public-data", "agriculture"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's definition of 'shipped' requires a named beneficiary who accepts and uses the output. Without a confirmed delivery partner, every task remains verifiedNeed: false and the success metric of '6 briefs in use' cannot be reached. The outreach thread opened in outreach-007 must convert to a confirmed commitment from at least one named beneficiary — an educator, newsroom, civil-society group, library, or humanitarian analyst who agrees to use the briefs/datasets.",
+  "objective": "Secure a named, confirmed delivery partner who agrees to use the project's briefs and datasets, with the channel, use-case, and contact documented.",
+  "acceptanceCriteria": [
+    "A named beneficiary organization or individual (educator, newsroom, civil-society group, library, or humanitarian analyst) confirms in writing that they will use at least one specific brief and dataset.",
+    "The partner's name, type, use-case (e.g. classroom instruction, data-journalism, grant writing), and delivery channel are documented in a committed record.",
+    "The requestor field for tasks targeted at that partner is updated to the confirmed partner name.",
+    "At least the tasks for delivered briefs that the partner has agreed to use are updated to verifiedNeed: true, with the partner confirmation recorded.",
+    "Delivery channel documented (e.g. direct email handoff, OER repository submission, Zenodo DOI shared with partner, republication link)."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-outreach-007.json — existing outreach thread and candidate channels",
+    "PLAN.md — Problem & beneficiaries section",
+    "PLAN.md — Governance, roles & stakeholders (Steward role)"
+  ],
+  "output": "A committed document recording the confirmed delivery partner, their name, type, use-case, delivery channel, and written confirmation of intent to use the briefs/datasets.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

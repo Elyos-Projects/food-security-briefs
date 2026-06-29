@@ -1,0 +1,35 @@
+{
+  "id": "food-security-briefs-brief-011",
+  "title": "Brief + derivative dataset #2",
+  "project": "food-security-briefs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["food-security", "agriculture", "public-data", "open-knowledge"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Following the pilot, the project scales to additional indicators that have passed triage (triage-010). The second brief and derivative dataset demonstrates that the pipeline template is repeatable and generalizes beyond the pilot indicator. Each brief/dataset pair must pass all three independent review gates (domain expert, editorial, licence) and be delivered to a named beneficiary.",
+  "objective": "Produce and deliver the second derivative dataset and plain-language brief for a FAOSTAT indicator that has passed triage, following the established pipeline and passing all three review gates.",
+  "acceptanceCriteria": [
+    "Source indicator has a committed gate-004 PASS artifact from triage-010; gate was applied prior to any dataset or brief work.",
+    "Derivative dataset built by the deterministic harness: tidy long-format CSV, datapackage.json (Frictionless), and Croissant ML metadata; status flags decoded; uncertainty preserved; source totals reconciled; output checksum committed and re-derived in CI.",
+    "Plain-language brief passes the statistical-integrity checklist (every figure resolves to a dataset row), passes the non-alarmist editorial review (style-guide checklist artifact committed, zero unresolved flags), includes indicator definition, reference period, uncertainty, 'what the data does not say', 'not advice' notice, and FAO attribution + non-endorsement disclaimer.",
+    "All three gate sign-offs committed: domain-expert, editorial, and licence/provenance.",
+    "Delivered/used by a named beneficiary with acceptance-evidence artifact (outcomes/<topic-id>.json) recorded; verifiedNeed flips to true only once a named partner confirms use.",
+    "pnpm build && pnpm test && pnpm lint pass; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-pilot-008.json — pilot pattern to replicate",
+    "tasks/food-security-briefs-triage-010.json — triaged indicators with PASS artifacts",
+    "tasks/food-security-briefs-styleguide-002.json — editorial standard",
+    "tasks/food-security-briefs-statcheck-003.json — statistical-integrity checklist",
+    "tasks/food-security-briefs-harness-006.json — build harness"
+  ],
+  "output": "A committed derivative dataset (CSV + datapackage.json + Croissant metadata) and plain-language brief #2, with all review artifacts and acceptance-evidence artifact recorded.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

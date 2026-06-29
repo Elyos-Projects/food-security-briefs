@@ -1,0 +1,34 @@
+{
+  "id": "food-security-briefs-triage-010",
+  "title": "Triage 3 indicators through gate + statcheck",
+  "project": "food-security-briefs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["food-security", "agriculture", "statistics", "public-data"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "After the pilot, the project needs a pipeline of triaged indicators ready for brief-authoring tasks. Triage means applying the full gate-004 (licence/provenance/PII/sensitivity) and statcheck-003 (statistical integrity, flag handling, chronic-vs-acute distinction) to each candidate indicator from TOPIC-CATALOG.md before any dataset or brief work begins. Committed PASS/FLAG/EXCLUDE artifacts for three indicators unblock brief-011 and brief-012.",
+  "objective": "Apply the gate-004 and statcheck-003 review to three candidate indicators from TOPIC-CATALOG.md and produce committed PASS/FLAG/EXCLUDE artifacts with full rationale for each.",
+  "acceptanceCriteria": [
+    "Three candidate indicators evaluated; for each, a committed gate artifact (PASS/FLAG/EXCLUDE) with rationale, covering: third-party-data check, PII screen, sensitivity screen, licence id/URL/snapshot, permitsDerivatives: true with cited clause, attribution + non-endorsement.",
+    "Each PASS artifact includes a statistical-suitability note: how status flags are handled, reference period type, whether uncertainty is published and preserved, and confirmation the indicator is structural/long-run rather than acute-crisis.",
+    "Any acute-crisis, advice-adjacent, or non-clean-licence indicator is explicitly EXCLUDED or escalated with the concern surfaced and documented.",
+    "At least two indicators reach PASS status and are ready to proceed to brief-011 and brief-012.",
+    "Artifacts committed to the repo (e.g. review/<indicator-id>-gate.md or equivalent); commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-gate-004.json — gate specification",
+    "tasks/food-security-briefs-statcheck-003.json — statistical-integrity checklist",
+    "tasks/food-security-briefs-outreach-007.json — TOPIC-CATALOG.md indicator shortlist",
+    "FAOSTAT domains and indicator catalogue",
+    "FAOSTAT terms of use (CC BY 4.0 IGO)"
+  ],
+  "output": "Three committed gate artifacts (PASS/FLAG/EXCLUDE) for three candidate FAOSTAT indicators, with at least two ready to proceed to brief-authoring.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "food-security-briefs-scale-020",
+  "title": "Briefs + datasets #6–#8 across at least 3 FAOSTAT domains (representative)",
+  "project": "food-security-briefs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "agriculture", "public-data", "open-knowledge"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M3 requires at least eight cumulative delivered briefs and datasets across at least three distinct FAOSTAT domains (e.g. Food Balance Sheets, Suite of Food Security Indicators, Production, Trade). This task covers briefs 6–8 and demonstrates breadth across FAOSTAT's domain structure. Each indicator must pass triage, and each brief/dataset pair must pass all three review gates. Specific indicators and domains are selected from TOPIC-CATALOG.md as they are triaged.",
+  "objective": "Produce and deliver briefs and datasets #6, #7, and #8 spanning at least three distinct FAOSTAT domains, using the established template and passing all three review gates for each.",
+  "acceptanceCriteria": [
+    "Three distinct FAOSTAT indicators selected from at least three different FAOSTAT domains, each with a committed gate-004 PASS artifact prior to work beginning.",
+    "Indicators span at least three distinct FAOSTAT domains (e.g. Food Balance Sheets / Supply Utilization Accounts, Suite of Food Security Indicators, Production, Trade) — not all from the same domain.",
+    "Each derivative dataset built by the deterministic harness: tidy long-format CSV, datapackage.json (Frictionless), and Croissant ML metadata; status flags decoded; uncertainty preserved; source totals reconciled; output checksum committed and re-derived in CI.",
+    "Each brief uses the scalable template (template-014), passes the statistical-integrity checklist, passes the non-alarmist editorial review, and includes all required sections, notices, and FAO attribution.",
+    "All three gate sign-offs committed for each brief/dataset pair: domain-expert, editorial, and licence/provenance.",
+    "All three delivered/used with acceptance-evidence artifacts recorded; verifiedNeed flips to true once confirmed.",
+    "pnpm build && pnpm test && pnpm lint pass; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-brief-016.json — prior brief/dataset pattern",
+    "tasks/food-security-briefs-template-014.json — scalable brief template",
+    "tasks/food-security-briefs-refresh-019.json — refresh process",
+    "tasks/food-security-briefs-partner-013.json — confirmed delivery partner",
+    "PLAN.md — Scope (candidate topic pool and FAOSTAT domains)"
+  ],
+  "output": "Three committed derivative datasets (CSV + datapackage.json + Croissant metadata) and three plain-language briefs (#6, #7, #8) spanning at least three FAOSTAT domains, each with all review artifacts and acceptance-evidence artifacts recorded.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "food-security-briefs-refresh-019",
+  "title": "Refresh process tied to FAOSTAT release cycle + drift detection",
+  "project": "food-security-briefs",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["food-security", "data-engineering", "public-data", "open-data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "FAOSTAT revises and re-releases datasets periodically; a re-release can change the story told by a brief. Each derivative dataset pins its FAOSTAT version and release date, so drift detection means checking whether the source has been re-released since the pinned version. Because a revision can change figures materially, a refresh is a full rebuild plus re-review of the affected brief — not a silent update. This task documents and automates the drift-detection and refresh-scheduling process.",
+  "objective": "Document and implement the refresh process: drift detection when FAOSTAT re-releases a pinned dataset version, and scheduling a rebuild + full re-review of the affected brief.",
+  "acceptanceCriteria": [
+    "Drift detection: a documented and implemented mechanism to detect when a FAOSTAT dataset has been re-released vs. the pinned version (e.g. version/release-date check via FAOSTAT API or bulk-download manifest).",
+    "On drift detected: the process schedules a maintenance rebuild using the build harness and flags the affected brief as stale pending re-review; the brief is never silently updated.",
+    "Re-review requirement documented: a refresh triggers the full three-gate review (domain-expert, editorial, licence) before the updated brief/dataset is published, because revisions can change the story.",
+    "Process documented in a committed REFRESH.md or equivalent; the process is tied to the FAOSTAT release cycle (annual or per-domain re-release cadence).",
+    "pnpm build && pnpm test && pnpm lint pass for any tooling; commit is DCO signed-off."
+  ],
+  "resources": [
+    "tasks/food-security-briefs-harness-006.json — build harness",
+    "PLAN.md — Sustainability & maintenance section",
+    "PLAN.md — Risks & mitigations (source data revised/re-released risk)",
+    "FAOSTAT bulk download / API version/release metadata"
+  ],
+  "output": "A committed refresh-process document (REFRESH.md or equivalent) and any tooling for drift detection, covering rebuild scheduling and re-review requirements.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
